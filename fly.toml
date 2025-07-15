@@ -1,7 +1,7 @@
 app = 'ollama-byrdson'
 primary_region = 'ord'
-kill_signal = "SIGTERM"
-kill_timeout = "2m0s"
+kill_signal = 'SIGTERM'
+kill_timeout = '2m0s'
 
 [build]
   image = 'ollama/ollama'
@@ -9,7 +9,7 @@ kill_timeout = "2m0s"
 [[mounts]]
   source = 'ollama_byrdson_models'
   destination = '/root/.ollama'
-  initial_size = '21gb'
+  initial_size = '3GB'
 
 [http_service]
   internal_port = 11434
